@@ -1,0 +1,64 @@
+# Node modules (if using Node.js or npm)
+node_modules/
+
+# Logs
+*.log
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Dependency directories
+bower_components/
+jspm_packages/
+
+# Build output
+/dist/
+/build/
+/public/assets/
+
+# Coverage reports
+coverage/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# MacOS Finder
+.DS_Store
+
+# Thumbnails
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.ico
+
+# npm package lock file
+package-lock.json
+
+# Yarn lock file
+yarn.lock
+
+# Operating System files
+Thumbs.db
+Desktop.ini
+
+# Miscellaneous
+*.swp
+*.swo
+*.tmp
+*.bak
+*.orig
+
+# Specific to TailwindCSS (if using JIT mode)
+.tailwind.config.js
+postcss.config.js
+
+# Specific to the .git

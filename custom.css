@@ -1,0 +1,9 @@
+body.menu-open {
+  overflow: hidden;
+}
+
+.bar {
+  height: 5px;
+  background-color: #ad0b49; /* Color of the line */
+  width: 100%; /* Full width */
+}
