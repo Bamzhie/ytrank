@@ -45,7 +45,34 @@
 
   <body>
     <nav class="flex justify-between items-center py-6 px-8 bg-white shadow-sm">
-      <div class="text-2xl font-bold text-gray-800">ytRank.</div>
+      <!-- Logo and Menu Items Wrapper -->
+      <div class="flex items-center space-x-6 w-full md:w-auto">
+        <div class="text-2xl font-bold text-gray-800">ytRank.</div>
+
+        <!-- Desktop Menu Items (aligned to the left on large screens) -->
+        <ul class="hidden md:flex items-center space-x-6">
+          <li>
+            <a href="#" class="text-gray-600 hover:text-blue-500 font-medium"
+              >Features</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-gray-600 hover:text-blue-500 font-medium"
+              >Pricing</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-gray-600 hover:text-blue-500 font-medium"
+              >Blog</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-gray-600 hover:text-blue-500 font-medium"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
 
       <!-- Hamburger Icon -->
       <input type="checkbox" id="menu-toggle" class="hidden peer" />
@@ -68,30 +95,6 @@
           ></path>
         </svg>
       </label>
-
-      <!-- Desktop Menu Items -->
-      <ul class="hidden md:flex items-center space-x-6">
-        <li>
-          <a href="#" class="text-gray-600 hover:text-blue-500 font-medium"
-            >Features</a
-          >
-        </li>
-        <li>
-          <a href="#" class="text-gray-600 hover:text-blue-500 font-medium"
-            >Pricing</a
-          >
-        </li>
-        <li>
-          <a href="#" class="text-gray-600 hover:text-blue-500 font-medium"
-            >Blog</a
-          >
-        </li>
-        <li>
-          <a href="#" class="text-gray-600 hover:text-blue-500 font-medium"
-            >Contact</a
-          >
-        </li>
-      </ul>
 
       <!-- Download Button (Desktop) -->
       <a
@@ -220,20 +223,22 @@
         </div>
 
         <!-- Features Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-screen-lg mx-auto"
+        >
           <!-- Unlock Trending Keywords -->
           <div
-            class="bg-blue-100 rounded-3xl p-6 lg:col-span-2 lg:row-span-2 flex flex-col justify-between"
+            class="bg-blue-100 rounded-xl p-4 lg:col-span-2 lg:row-span-2 flex flex-col items-start lg:ml-40"
           >
             <div>
-              <h3 class="text-xl font-semibold text-gray-800 mb-4">
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">
                 Unlock Trending Keywords
               </h3>
-              <p class="text-gray-700 mb-4">
+              <p class="text-gray-700 mb-3 text-sm leading-relaxed">
                 Discover high-potential keywords to boost your video's
                 visibility and reach.
               </p>
-              <ul class="grid grid-cols-2 gap-y-2 text-sm text-gray-600">
+              <ul class="grid grid-cols-2 gap-y-1 text-xs text-gray-600">
                 <li>small business ideas</li>
                 <li>fitness for beginners</li>
                 <li>work from home jobs</li>
@@ -244,25 +249,20 @@
             <img
               src="assets/trending.svg"
               alt="Unlock Trending Keywords Image"
-              class="mt-4"
-              style="
-                width: 100%;
-                max-width: 254px;
-                height: auto;
-                max-height: 285.05px;
-              "
+              class="mt-auto"
+              style="width: 100%; max-width: 170px"
             />
           </div>
 
           <!-- Youtube SEO Score -->
           <div
-            class="bg-pink-100 rounded-3xl p-6 lg:col-span-2 flex flex-col justify-between"
+            class="bg-pink-100 rounded-xl p-4 lg:col-span-2 flex flex-col items-start"
           >
             <div>
-              <h3 class="text-xl font-semibold text-gray-800 mb-4">
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">
                 Youtube SEO Score
               </h3>
-              <p class="text-gray-700 mb-4">
+              <p class="text-gray-700 text-sm leading-relaxed">
                 Analyze your content for SEO best practices, get actionable
                 insights, and ensure your videos are optimized to rank higher in
                 search results.
@@ -271,43 +271,40 @@
             <img
               src="assets/seo_score.svg"
               alt="Youtube SEO Score Image"
-              class="mt-4"
-              style="
-                width: 100%;
-                max-width: 390px;
-                height: auto;
-                max-height: 166px;
-              "
+              class="mt-auto"
+              style="width: 80%; max-width: 240px"
             />
           </div>
 
           <!-- Analytics -->
           <div
-            class="bg-blue-100 rounded-3xl p-6 flex flex-col justify-between"
+            class="bg-blue-100 rounded-xl p-4 flex flex-col justify-between items-start"
           >
-            <div class="p-5">
-              <h3 class="text-xl font-semibold text-gray-800 mb-4">
+            <div>
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">
                 Analytics
               </h3>
-              <p class="text-gray-700 mb-4">Track your campaign performance.</p>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Track your campaign performance.
+              </p>
             </div>
             <img
               src="assets/analytics.svg"
               alt="Analytics Image"
-              class="w-full"
-              style="height: auto; object-fit: cover; align-self: flex-end"
+              class="mt-auto"
+              style="width: 80%; max-width: 150px; height: auto"
             />
           </div>
 
           <!-- Tag Generator -->
           <div
-            class="bg-pink-100 rounded-3xl p-6 flex flex-col justify-between"
+            class="bg-pink-100 rounded-xl p-4 flex flex-col justify-between items-start"
           >
             <div>
-              <h3 class="text-xl font-semibold text-gray-800 mb-4">
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">
                 Tag Generator
               </h3>
-              <p class="text-gray-700 mb-4">
+              <p class="text-gray-700 text-sm leading-relaxed">
                 Create optimized tags for your videos to improve discoverability
                 and engagement.
               </p>
@@ -315,13 +312,8 @@
             <img
               src="assets/tag.svg"
               alt="Tag Generator Image"
-              class="mt-4"
-              style="
-                width: 100%;
-                max-width: 188.4px;
-                height: auto;
-                max-height: 172px;
-              "
+              class="mt-auto"
+              style="width: 60%; max-width: 120px; height: auto"
             />
           </div>
         </div>
@@ -369,7 +361,7 @@
               <span class="font-bold text-lg md:text-xl"
                 >01. Daily Videos Ideas</span
               >
-              <div class="h-[0.5px] bg-[#2d3b47] w-full my-4"></div>
+              <div class="border-t border-gray-300 my-4"></div>
               <p class="text-sm md:text-base">
                 Get fresh, AI-generated content ideas tailored to your YouTube
                 niche and audience.
@@ -379,7 +371,8 @@
               <span class="font-bold text-lg md:text-xl"
                 >02. Channel Competition Analysis</span
               >
-              <div class="h-[0.5px] bg-[#2d3b47] w-full my-4"></div>
+              <div class="border-t border-gray-300 my-4"></div>
+
               <p class="text-sm md:text-base">
                 Our advanced tool provides in-depth insights into your
                 competitors' strategies, performance, and audience engagement.
@@ -389,7 +382,7 @@
               <span class="font-bold text-lg md:text-xl"
                 >03. Mentions Finder</span
               >
-              <div class="h-[0.5px] bg-[#2d3b47] w-full my-4"></div>
+              <div class="border-t border-gray-300 my-4"></div>
               <p class="text-sm md:text-base">
                 This powerful tool scans millions of videos to find where your
                 brand is being talked about, helping you stay informed and
@@ -410,7 +403,7 @@
       </div>
     </section>
     <!-- Reanson section -->
-    <section class="w-full bg-blue-700 mt-24">
+    <section class="w-full bg-blue-500 mt-24">
       <div
         class="flex flex-col gap-28 lg:flex-row items-center justify-between p-8 md:p-16 lg:p-24 max-w-none"
       >
@@ -811,14 +804,14 @@
 
       <!-- Footer -->
       <footer class="bg-gray-100 text-gray-800 py-6">
-        <div class="bar border-t border-gray-300"></div>
+        <div class="border-t border-gray-300"></div>
         <div
           class="footer-word max-w-4xl mx-auto px-4 flex justify-between items-center"
         >
           <div class="footer-rs text-sm">
             <p>© 2024 ytRank. All rights reserved.</p>
           </div>
-          <div class="footer-ls text-sm space-x-4">
+          <div class="footer-ls md:flex text-sm space-x-4">
             <p class="hover:underline cursor-pointer">Privacy policy</p>
             <p class="hover:underline cursor-pointer">Terms of Service</p>
           </div>
