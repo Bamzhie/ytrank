@@ -62,7 +62,7 @@
   </head>
 
   <body>
-    <div class="xl:pl-72 xl:pr-72 lg:pr-20 lg:pl-20">
+    <div class="xl:ml-72 xl:mr-72">
       <nav
         class="flex justify-between items-center py-6 px-8 bg-white shadow-sm"
       >
@@ -220,35 +220,59 @@
       </nav>
       <!-- Hero Section -->
       <section
-        class="relative flex flex-col items-center text-center py-16 px-8 bg-gradient-to-b from-white to-gray-50"
+        class="relative flex flex-col items-center text-left py-16 px-8 bg-gradient-to-b from-white to-gray-50"
       >
+        <!-- Background Image -->
+        <img
+          src="assets/bgytRank.jpeg"
+          alt="Background"
+          class="absolute inset-0 w-full h-full object-cover z-0"
+        />
+
         <!-- Floating Elements -->
-        <div class="hidden md:block absolute inset-0 pointer-events-none">
+        <div class="hidden md:block absolute inset-0 pointer-events-none z-10">
           <img
             src="assets/side.svg"
             alt="Floating Element"
-            class="absolute left-0 top-1/4 transform -translate-y-1/2 w-28 md:w-44 -rotate-12 xl:-left-10 lg:-left-10 xl:overflow-hidden"
+            class="absolute left-0 top-1/4 transform -translate-y-1/2 w-20 md:w-32 -rotate-12 xl:-left-10 xl:overflow-hidden"
           />
           <img
             src="assets/right.svg"
             alt="Floating Element"
-            class="absolute right-0 -bottom-1/4 transform -translate-y-1/2 w-28 md:w-44 rotate-12 lg:-right-14 xl:-right-14 xl:overflow-hidden"
+            class="absolute right-0 -bottom-1/4 transform -translate-y-1/2 w-20 md:w-32 rotate-12 xl:-right-14 xl:overflow-hidden"
           />
         </div>
 
         <!-- Hero Content -->
-        <h1
-          class="text-3xl md:text-5xl font-bold text-gray-800 max-w-3xl leading-tight"
-        >
-          Creators Grow Their <span class="text-blue-600">YouTube</span> Channel
-          with ytRank
-        </h1>
-        <p class="text-base md:text-xl text-gray-600 mt-4 max-w-2xl">
-          Optimize your content, outsmart the competition, and accelerate your
-          growth with AI-powered tools.
-        </p>
         <div
-          class="mt-8 flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4"
+          class="relative z-20 flex flex-col items-center text-center md:flex-row md:items-start md:justify-between w-full max-w-6xl"
+        >
+          <!-- Text Section -->
+          <div class="text-center md:text-center mx-auto md:mx-0">
+            <h1
+              class="text-3xl md:text-5xl font-bold text-gray-800 max-w-3xl leading-tight"
+            >
+              Creators Grow Their
+              <span class="text-blue-600">YouTube</span> Channel with ytRank
+            </h1>
+            <p
+              class="text-base text-center md:text-xl text-gray-600 mt-4 max-w-xl md:ml-20"
+            >
+              Optimize your content, outsmart the competition, and accelerate
+              your growth with AI-powered tools.
+            </p>
+          </div>
+
+          <!-- Image Positioned to the Bottom-Right -->
+          <img
+            src="assets/yiutubeytube.svg"
+            alt="Floating Element"
+            class="hidden md:block w-[100px] h-[100px] md:w-[120px] md:h-72 z-20 absolute top-36 -right-24 mb-4 mr-4"
+          />
+        </div>
+
+        <div
+          class="mt-8 flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 relative z-20"
         >
           <button
             class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700"
@@ -262,7 +286,7 @@
             <span class="ml-2">WATCH VIDEO</span>
           </button>
         </div>
-        <div class="mt-12 md:mt-16">
+        <div class="mt-12 md:mt-16 relative z-20">
           <img
             src="assets/Group.svg"
             alt="ytRank dashboard"
@@ -288,7 +312,7 @@
 
           <!-- Features Grid -->
           <div
-            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-screen-lg mx-auto xl:pr-36 lg:pr-16"
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-screen-lg mx-auto"
           >
             <!-- Unlock Trending Keywords -->
             <div
@@ -425,7 +449,7 @@
                 <span class="font-bold text-lg md:text-xl"
                   >01. Daily Videos Ideas</span
                 >
-                <div class="border-t border-gray-300 my-4"></div>
+                <hr class="border-t border-black my-6" />
                 <p class="text-sm md:text-base">
                   Get fresh, AI-generated content ideas tailored to your YouTube
                   niche and audience.
@@ -435,8 +459,7 @@
                 <span class="font-bold text-lg md:text-xl"
                   >02. Channel Competition Analysis</span
                 >
-                <div class="border-t border-gray-300 my-4"></div>
-
+                <hr class="border-t border-black my-6" />
                 <p class="text-sm md:text-base">
                   Our advanced tool provides in-depth insights into your
                   competitors' strategies, performance, and audience engagement.
@@ -446,7 +469,7 @@
                 <span class="font-bold text-lg md:text-xl"
                   >03. Mentions Finder</span
                 >
-                <div class="border-t border-gray-300 my-4"></div>
+                <hr class="border-t border-black my-6" />
                 <p class="text-sm md:text-base">
                   This powerful tool scans millions of videos to find where your
                   brand is being talked about, helping you stay informed and
@@ -469,14 +492,14 @@
       <!-- Reanson section -->
       <section class="w-full bg-blue-500 mt-24">
         <div
-          class="flex flex-col gap-28 lg:flex-row items-center justify-between p-8 md:p-16 lg:p-24 max-w-none"
+          class="flex flex-col gap-28 lg:flex-row items-center justify-between p-8 max-w-none"
         >
           <!-- Text Section -->
           <div class="text-white lg:w-1/2">
-            <h3 class="text-3xl md:text-4xl font-semibold mb-4">
+            <h3 class="text-xl md:font-bold font-semibold mb-4">
               Why YouTube SEO Score Matters
             </h3>
-            <p class="text-lg md:text-xl mb-8">
+            <p class="text-sm mb-8">
               In the bustling world of YouTube, standing out can be tough.
               That's where your YouTube SEO score comes into play. It's more
               than just a number - it's your key to visibility, engagement, and
@@ -737,7 +760,7 @@
 
       <!-- FAQ Section -->
 
-      <section class="faq-container py-12 bg-gray-50">
+      <section class="faq-container py-12 bg-gray-200">
         <!-- FAQ Section -->
         <div class="faq max-w-4xl mx-auto px-4">
           <h2 class="text-3xl font-bold text-gray-800 mb-4">
@@ -754,7 +777,9 @@
           <!-- Accordion Items -->
           <div class="space-y-4">
             <!-- Accordion Item 1 -->
-            <div class="accordion-item border border-gray-200 rounded-lg">
+            <div
+              class="accordion-item border border-gray-200 rounded-lg shadow-md"
+            >
               <input type="checkbox" id="item1" class="hidden" />
               <label
                 for="item1"
@@ -765,7 +790,7 @@
               <div
                 class="accordion-item-content p-4 bg-white rounded-b-lg hidden"
               >
-                <p>
+                <p class="text-gray-700">
                   YTRank is an AI-powered tool designed to help YouTube creators
                   optimize their content, improve SEO, and grow their channels
                   through keyword research, SEO analysis, title generation, and
@@ -775,7 +800,9 @@
             </div>
 
             <!-- Accordion Item 2 -->
-            <div class="accordion-item border border-gray-200 rounded-lg">
+            <div
+              class="accordion-item border border-gray-200 rounded-lg shadow-md"
+            >
               <input type="checkbox" id="item2" class="hidden" />
               <label
                 for="item2"
@@ -786,7 +813,7 @@
               <div
                 class="accordion-item-content p-4 bg-white rounded-b-lg hidden"
               >
-                <p>
+                <p class="text-gray-700">
                   The YouTube Keyword Tool helps you find the best keywords to
                   use in your video titles, descriptions, and tags, enhancing
                   your video’s discoverability on the platform.
@@ -795,7 +822,9 @@
             </div>
 
             <!-- Accordion Item 3 -->
-            <div class="accordion-item border border-gray-200 rounded-lg">
+            <div
+              class="accordion-item border border-gray-200 rounded-lg shadow-md"
+            >
               <input type="checkbox" id="item3" class="hidden" />
               <label
                 for="item3"
@@ -806,7 +835,7 @@
               <div
                 class="accordion-item-content p-4 bg-white rounded-b-lg hidden"
               >
-                <p>
+                <p class="text-gray-700">
                   The YouTube SEO Checker analyzes your video content and
                   metadata to ensure it is optimized for search engines,
                   increasing your chances of ranking higher in search results.
@@ -815,7 +844,9 @@
             </div>
 
             <!-- Accordion Item 4 -->
-            <div class="accordion-item border border-gray-200 rounded-lg">
+            <div
+              class="accordion-item border border-gray-200 rounded-lg shadow-md"
+            >
               <input type="checkbox" id="item4" class="hidden" />
               <label
                 for="item4"
@@ -826,7 +857,7 @@
               <div
                 class="accordion-item-content p-4 bg-white rounded-b-lg hidden"
               >
-                <p>
+                <p class="text-gray-700">
                   The YouTube Title Generator creates compelling titles for your
                   videos, helping you attract more viewers and improve
                   engagement.
@@ -835,7 +866,9 @@
             </div>
 
             <!-- Accordion Item 5 -->
-            <div class="accordion-item border border-gray-200 rounded-lg">
+            <div
+              class="accordion-item border border-gray-200 rounded-lg shadow-md"
+            >
               <input type="checkbox" id="item5" class="hidden" />
               <label
                 for="item5"
@@ -846,7 +879,7 @@
               <div
                 class="accordion-item-content p-4 bg-white rounded-b-lg hidden"
               >
-                <p>
+                <p class="text-gray-700">
                   The YouTube Channel Ranking feature evaluates your channel's
                   overall performance, providing insights on how to improve your
                   channel's visibility and subscriber growth.
@@ -869,18 +902,15 @@
             research, SEO scoring, and smart content ideas to enhance <br />
             their YouTube strategy
           </div>
+          <hr class="border-t border-gray-300 my-12" />
         </div>
 
         <!-- Separator Line -->
-        <hr class="border-t border-gray-300 my-12" />
 
         <!-- Footer -->
-        <footer class="bg-gray-100 text-gray-800 py-6">
-          <div class="border-t border-gray-300"></div>
-          <div
-            class="footer-word max-w-4xl mx-auto px-4 flex justify-between items-center"
-          >
-            <div class="footer-rs text-sm">
+        <footer class="bg-black text-white h-full py-6">
+          <div class="max-w-4xl px-4 flex justify-between">
+            <div class="text-sm">
               <p>© 2024 ytRank. All rights reserved.</p>
             </div>
             <div class="footer-ls md:flex text-sm space-x-4">
@@ -911,6 +941,17 @@
               body.style.overflow = ""; // Allow scrolling when menu is closed
             }
           });
+        document.querySelectorAll(".accordion-item").forEach((item) => {
+          item.querySelector("label").addEventListener("click", function () {
+            const content = item.querySelector(".accordion-item-content");
+            content.classList.toggle("hidden");
+            const isOpen = !content.classList.contains("hidden");
+            item
+              .querySelector("label")
+              .classList.toggle("bg-gray-100", !isOpen);
+            item.querySelector("label").classList.toggle("bg-gray-200", isOpen);
+          });
+        });
       </script>
     </div>
   </body>
