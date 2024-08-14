@@ -5,3 +5,16 @@
 body.menu-open {
   overflow: hidden;
 }
+
+/* Dropdown styles */
+.group:hover .group-hover\:block {
+  display: block;
+}
+
+.group-hover\:block {
+  display: none;
+}
+
+.absolute {
+  position: absolute;
+}
